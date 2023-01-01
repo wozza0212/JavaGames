@@ -55,7 +55,9 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
         timer.start();
 
         if(play) {
-            if(new Rectangle(ballposX, ballposY, 20, 30).intersects(new Rectangle(playerX, 550, 100, 8)));
+            if(new Rectangle(ballposX, ballposY, 20, 30).intersects(new Rectangle(playerX, 550, 100, 8))){
+                ballYdir = -ballYdir;
+            }
 
             ballposX += ballXdir;
             ballposY += ballYdir;
