@@ -46,6 +46,7 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
         g.fillRect(0, 0, 692, 3);
         g.fillRect(691, 0 , 3, 592);
 
+
         g.setColor(Color.blue);
         g.fillRect(playerX, 550, 100, 8);
 
